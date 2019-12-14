@@ -1,13 +1,21 @@
 # Site settings
-title: Smart Material Theme
-email: your-email@domain.com
-description: Slick Material Design theme for Jekyll powered by Material Design Lite.
+title: 다윗소년의 블로그
+email: davidboy7780@gmail.com
+description: '프로그래밍을 하면서 배운 것을 정리 및 오류처리를 정리한 블로그입니다.'
 baseurl: "/jekyll-smart-material" # the subpath of your site, e.g. /blog/
-url: "http://ssokurenko.github.io" # the base hostname & protocol for your site
+url: "https://davidboybob.github.io" # the base hostname & protocol for your site
 copyright: '&copy; 2015-2016 Smart Material Theme'
 
 # Build settings
 markdown: kramdown
+
+# About/contact
+author:
+  name: Pak Sung Jin
+  description: 다윗소년 블로그
+  contact:
+    github:    https://github.com/davidboybob
+    email:    mailto:davidboy7780@gmail.com
 
 # Custom theme could be generated at: https://getmdl.io/customize/index.html
 material_theme: blue-deep_orange
