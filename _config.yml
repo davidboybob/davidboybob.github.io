@@ -2,7 +2,7 @@
 title: 다윗소년의 블로그
 email: davidboy7780@gmail.com
 description: '프로그래밍을 하면서 배운 것을 정리 및 오류처리를 정리한 블로그입니다.'
-baseurl: "/jekyll-smart-material" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://davidboybob.github.io" # the base hostname & protocol for your site
 copyright: '&copy; 2015-2016 Smart Material Theme'
 
