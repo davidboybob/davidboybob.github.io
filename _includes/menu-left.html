@@ -3,14 +3,6 @@
     
     <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="{{ site.baseurl }}/">Home</a>
-        {% for page in site.pages %}
-        {% if page.title %}
-        <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-        {% endfor %}
-    </nav>
-
-    <nav class="sidebar-nav">
         {% for nav in site.nav %}
           {% assign is_relative = nav[1][0] | slice: 0 %}
           {% assign url = nav[1][0] %}
@@ -51,5 +43,7 @@
         {% endfor %}
     
     
-      </nav>
+        
+    </nav>
+
 </div>  
