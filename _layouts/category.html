@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="post mdl-shadow--2dp">
+  <header class="post-header">
+    <img class="w-25" src="/assets/images/{{ page.image }}"/>
+    {% comment %} <h1 class="post-title">{{ page.title }}</h1> {% endcomment %}
+    <div class="mt-2 font-weight-bold" >{{ page.description }}</div>
+  </header>
+</div>
+
+
+<div class="mdl-grid">
+  {% assign category = page.category | default: page.title %}
+  {% for post in site.categories[category] %}
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone post-block">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <div class="post-card mdl-shadow--2dp">
+          <img src="/assets/images/{{ post.image }}"/>
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">{{ post.title }}</h2> <h3 class="mx-2 my-0"><small >{{ post.date | date_to_string }}</small></h3>
+            
+          </div>
+          
+          <div class="mdl-card__supporting-text">
+            {{ post.description }}
+          </div>
+          <div class="post-card__fade"></div>
+        </div>
+      </a>
+  </div>
+  {% endfor %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>

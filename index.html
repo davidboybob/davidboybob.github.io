@@ -1,10 +1,26 @@
 ---
 layout: default
 ---
+<header class="site-category">
+  <ul>
+    
+    {% assign pages_list = site.pages %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "category" %}
+          <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    
+</ul>
+</header>
+
 
 <div class="mdl-grid">
   {% for post in site.posts %}
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone post-block">
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone post-block ">
       <a href="{{ post.url | prepend: site.baseurl }}">
         <div class="post-card mdl-shadow--2dp">
           <img src="./assets/images/{{ post.image }}"/>
