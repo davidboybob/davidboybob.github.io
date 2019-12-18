@@ -5,7 +5,7 @@ date:   2019-09-20 00:00:00
 categories: Django
 image: django.png
 description: static 파일과 media 파일의 정의와 사용법
-tags: python 파이썬 Django 
+tags: python 파이썬 Django Static Media
 comments: true
 ---
 

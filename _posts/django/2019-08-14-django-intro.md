@@ -5,7 +5,7 @@ date:   2019-08-14 00:00:00
 categories: Django
 image: django.png
 description: 본격적인 강의에 앞서서 장고가 무엇인지 알고가는 강의입니다.
-tags: python 파이썬 Django 
+tags: python 파이썬 Django Intro
 comments: true
 ---
 

@@ -5,7 +5,7 @@ date:   2019-09-18 00:00:00
 categories: Django
 image: django.png
 description: URL에 대한 설명 및 HTTP 기초
-tags: python 파이썬 Django 
+tags: python 파이썬 Django HTTP URL
 comments: true
 ---
 

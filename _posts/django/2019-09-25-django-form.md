@@ -5,7 +5,7 @@ date:   2019-09-25 00:00:00
 categories: Django
 image: django.png
 description: django form 사용 및 커스터마이징
-tags: python 파이썬 Django 
+tags: python 파이썬 Django Django_Form
 comments: true
 ---
 
