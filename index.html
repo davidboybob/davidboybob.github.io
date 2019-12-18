@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<header class="site-category">
+{% comment %} <header class="site-category">
   <ul>
     
     {% assign pages_list = site.pages %}
@@ -15,13 +15,68 @@ layout: default
     {% endfor %}
     
 </ul>
-</header>
+</header> {% endcomment %}
+<br>
+
+<div class="tags-expo ">
+  <div class="tags-expo-list">
+    {% for tag in site.categories %}
+    <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+    {% endfor %}
+  </div>
+  <br>
+  <hr/>
+  
+  <br>
+  <div class="tags-expo-section">
+    <a href="#"><h4 id="shortcut"><img id="shortcut-img" src="./assets/images/layout.png" style="width: 3rem;">최근 글 바로가기</h4></a>
+    <ul class="tags-expo-posts">
+      {% for post in site.posts offset: 0 limit: 10  %}
+      <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+        <li>
+          <b>{{ post.title }}</b>
+          <small class="post-date" style="opacity: 0.5;">{{ post.date | date_to_string }}</small>
+        </li>
+      </a>
+      {% endfor %}
+    </ul>
 
 
+    {% for tag in site.categories %}
+    <a class="category-title"><h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2></a>
+    <ul class="tags-expo-posts">
+    <div class="mdl-grid">
+      {% for post in tag[1] %}
+        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone post-block">
+              <a href="{{ post.url | prepend: site.baseurl }}" >
+                <div class="post-card mdl-shadow--2dp">
+                  <img src="./assets/images/{{ post.image }}"/>
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+                  </div>
+
+                  <div class="mdl-card__supporting-text">
+                    {{ post.description }}
+                  </div>
+                  <div class="post-card__fade"></div>
+                </div>
+              </a>
+          </div>
+      </a>
+      {% endfor %}
+    </div>
+    </ul>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% comment %} 
 <div class="mdl-grid">
   {% for post in site.posts %}
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone post-block ">
-      <a href="{{ post.url | prepend: site.baseurl }}">
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone post-block" id="{{ tag[0] | slugify }}">
+      <a href="{{ post.url | prepend: site.baseurl }}" >
         <div class="post-card mdl-shadow--2dp">
           <img src="./assets/images/{{ post.image }}"/>
           <div class="mdl-card__title">
@@ -36,4 +91,4 @@ layout: default
       </a>
   </div>
   {% endfor %}
-</div>
+</div> {% endcomment %}

@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Smart Post"
-date:   2015-10-23 17:40:06
-categories: Django
-image: django.png
+date:   2016-10-23 17:40:06
+categories: Vuejs
+image: python.png
 description: This is the first Demo post. Click to see full content.
 tags: python 파이썬 Django
 comments: true

@@ -16,3 +16,15 @@ $on-laptop: 960px;
 
 // Site title color
 $site-title-color: #F8F8FF;
+
+//tag style
+$post-date-color: #9a9a9a;
+$lightgrey:  #eee;
+$blue:     #1B6EC4;
+$white:      #fff;
+$theme-color: $blue;
+$theme-color-dark: darken($theme-color, 10%);
+
+
+$font-sans:  'NanumSquare', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
+$font-font-awesome: FontAwesome;
