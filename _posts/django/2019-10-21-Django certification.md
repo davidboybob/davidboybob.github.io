@@ -188,9 +188,10 @@ Authorization(권한, 허가) - 권한 부여
 - User에는 항상 True / AnonymousUser에 대해서만 항상 False
 - 단, 이것은 권한과는 관련이 없으며 사용자가 활동 중(active)이거나 유효한 세션(valid sesstion)을 가지고 있는지도 확인하지 않습니다.
 - 일반적으로 `request.user`에서 이 속성을 사용하여 미들웨어의 `django.contrib.auth.middleware.AuthenticationMiddleware`를 통과했는지 확인하는 역할.
-
+{% raw %}
 ```html
 <!-- base.html -->
+
 {% load bootstrap4 %}
 
 <!DOCTYPE html>
@@ -224,7 +225,7 @@ Authorization(권한, 허가) - 권한 부여
 </body>
 </html>
 ```
-
+{% endraw %}
 
 
 

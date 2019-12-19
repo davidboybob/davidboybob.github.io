@@ -23,3 +23,5 @@ material_theme: blue_grey-blue
 
 # Google Analytics account ID (UA-XXXXXXXX-X)
 google-analytics-ua: UA-84475574-1
+
+excerpt_separator: ""

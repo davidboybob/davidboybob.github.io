@@ -17,7 +17,9 @@ pip install -r requirements.txt
 URL Namespace
 
 1. 하드코딩 URL 제거
-2. {% url %} template tag
+
+2. {% raw %} {% url %}  {% endraw %} template tag
+
 3. 문제점
    1. app이 여러개가 되면, 단순히 url name 만 가지고는 어떤 app의 url 인지 알
 
@@ -116,7 +118,7 @@ redirect()
   # <HttpResponseRedirect status_code=200, "text/html; charset=utf-8, url="/articles/">
   ```
 
-url template tag({% url %})
+url template tag({% raw %} {% url %} {% endraw %})
 
 - 내부적으로 
 

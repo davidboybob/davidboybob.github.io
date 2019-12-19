@@ -32,7 +32,7 @@ comments: true
 
 
 Working with Form
-
+{% raw %}
 ```html
 #1
 {{ form.title.label_tag }}
@@ -49,7 +49,7 @@ Working with Form
 #3
 {{ form.as_p }}
 ```
-
+{% endraw %}
 
 
 widget
