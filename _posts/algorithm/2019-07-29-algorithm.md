@@ -3,7 +3,7 @@ layout: post
 title:  "알고리즘에 대해서 "
 date:   2019-07-29 00:00:00
 categories: Algorithm
-image: algorithm.png
+image: algorithm1.png
 description: 알고리즘을 공부하기에 앞서서 전반적인 알고리즘에 대해서 배우는 시간.
 tags: Algorithm List O 
 comments: true
