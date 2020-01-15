@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "데이터베이스"
+date:   2019-12-01 00:00:00
+categories: DB
+image: sqlite3.png
+description: 알고리즘을 공부하기에 앞서서 전반적인 알고리즘에 대해서 배우는 시간.
+tags: Algorithm List O 
+comments: true
+---
+
 # 데이터베이스 개념
 
 데이터 베이스란 ?  
