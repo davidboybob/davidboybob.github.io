@@ -17,6 +17,7 @@ layout: default
 
 <div class="mdl-grid">
   {% assign category = page.category | default: page.title %}
+  {% assign sorted = (page.category | sort: 'title') | reverse %}
   {% for post in site.categories[category] %}
     <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone post-block">
       <a href="{{ post.url | prepend: site.baseurl }}">
