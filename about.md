@@ -10,10 +10,10 @@ permalink: /about/
 세상을 바꾸는 한 줄의 코딩! 불편함을 편안함으로 
 
 
-홈페이지 수정 할것 2019.12.16 일 기준
+홈페이지 수정 할것 2020.02.27 일 기준
 - 태그 완성 done
 - 댓글 완성 done
-- Menu-bar에 profile 추가하기
+- Menu-bar에 profile 추가하기 done
 - 검색기능 추가하기
 
 Github repository: [https://github.com/davidboybob/TIL2](https://github.com/davidboybob/TIL2)
